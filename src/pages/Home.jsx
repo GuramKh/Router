@@ -5,21 +5,25 @@ function Home() {
   const navigate = useNavigate();
 
   return (
-    <div className="container mx-auto px-4 py-6">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-2">Welcome to Our Website</h1>
-        <div className="mb-6">
+    <div className="container mx-auto px-4 h-[calc(100vh-8rem)] flex items-center">
+      <div className="text-center w-full space-y-6">
+        <h1 className="text-5xl font-bold bg-gradient-to-r from-purple-800 to-indigo-800 text-transparent bg-clip-text">
+          Welcome to Our Website
+        </h1>
+
+        <div className="relative group">
           <img 
             src={Image}
             alt="Hero"
-            className="mx-auto rounded-lg shadow-lg"
+            className="mx-auto border-2 rounded-lg shadow-md"
           />
         </div>
+
         <button
           onClick={() => navigate('/gallery')}
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          className="bg-gradient-to-r from-purple-800 to-indigo-800 text-white font-bold py-3 px-8 rounded-full transform transition-all duration-300 hover:scale-105"
         >
-          Go To Gallery
+          Explore Gallery
         </button>
       </div>
     </div>
