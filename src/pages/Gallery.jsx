@@ -20,7 +20,7 @@ function Gallery() {
     <div className="container mx-auto px-4 py-8">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         {photos.map((photo) => (
-          <div key={photo.id} className="bg-white rounded-lg border-2 shadow-lg overflow-hidden px-2 py-5">
+          <div key={photo.id} className="bg-white rounded-lg border-2 shadow-lg overflow-hidden px-3 py-3">
             <img 
               src={photo.url} 
               alt={photo.title} 
