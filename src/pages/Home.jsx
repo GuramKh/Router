@@ -6,7 +6,7 @@ function Home() {
 
   return (
     <div className="container mx-auto px-4 h-[calc(100vh-8rem)] flex items-center">
-      <div className="text-center w-full space-y-6">
+      <div className="text-center w-full space-y-2">
         <h1 className="text-5xl font-bold bg-gradient-to-r from-purple-800 to-indigo-800 text-transparent bg-clip-text">
           Welcome to Our Website
         </h1>
